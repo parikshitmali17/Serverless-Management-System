@@ -1,6 +1,6 @@
 
 export default function SmallCarousel(props) {
-    const BASE_URL="http://event-serverless-management-system.s3-website.ap-south-1.amazonaws.com";
+    const BASE_URL="https://7r70hx8lof.execute-api.ap-south-1.amazonaws.com/prod/static";
     return (
         <div style={{ backgroundColor: '#3E342D', padding: '3rem' }}>
             <h5 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: "40px", margin: "1rem", color: '#FFFFFF' }}>Our Work</h5>

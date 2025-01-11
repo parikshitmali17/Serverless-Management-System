@@ -1,5 +1,5 @@
 export default function Coursel() {
-    const BASE_URL="http://event-serverless-management-system.s3-website.ap-south-1.amazonaws.com";
+    const BASE_URL="https://7r70hx8lof.execute-api.ap-south-1.amazonaws.com/prod/static";
     return (
         <div id="carouselExampleCaptions" className="carousel slide "  data-bs-ride="carousel">
             <div className="carousel-indicators">
