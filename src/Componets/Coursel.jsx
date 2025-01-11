@@ -1,4 +1,5 @@
 export default function Coursel() {
+    const BASE_URL="http://event-serverless-management-system.s3-website.ap-south-1.amazonaws.com";
     return (
         <div id="carouselExampleCaptions" className="carousel slide "  data-bs-ride="carousel">
             <div className="carousel-indicators">
@@ -25,21 +26,21 @@ export default function Coursel() {
             </div>
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                    <img src="Images\Banquet.jpg" className="d-block w-100" alt="..." />
+                    <img src={`${BASE_URL}Images\Banquet.jpg`} className="d-block w-100" alt="..." />
                     <div className="carousel-caption d-none d-md-block">
                         <h5>Private Parties</h5>
                         <p>Birthday Parties,Anniversary parties,Theme Parties and much more..</p>
                     </div>
                 </div>
                 <div className="carousel-item">
-                    <img src="Images\Dance.jpg" className="d-block w-100" alt="..." />
+                    <img src={`${BASE_URL}Images\Dance.jpg`} className="d-block w-100" alt="..." />
                     <div className="carousel-caption d-none d-md-block">
                         <h5>Music & Entertainment</h5>
                         <p>From live bands and DJs to mesmerising performers, we have everything you need</p>
                     </div>
                 </div>
                 <div className="carousel-item">
-                    <img src="Images\CorporateMeeting.jpg" className="d-block w-100" alt="..." />
+                    <img src={`${BASE_URL}Images\CorporateMeeting.jpg`} className="d-block w-100" alt="..." />
                     <div className="carousel-caption d-none d-md-block">
                         <h5 style={{color:"black"}} >We offer different types  of corporate events</h5>
                         <p style={{color:"black"}}>Board Meetings,Product Launches,Corporate Dinner,etc</p>

@@ -1,5 +1,6 @@
 
 export default function SmallCarousel(props) {
+    const BASE_URL="http://event-serverless-management-system.s3-website.ap-south-1.amazonaws.com";
     return (
         <div style={{ backgroundColor: '#3E342D', padding: '3rem' }}>
             <h5 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: "40px", margin: "1rem", color: '#FFFFFF' }}>Our Work</h5>
@@ -13,7 +14,7 @@ export default function SmallCarousel(props) {
                     <div className="carousel-inner" style={{ height: '100%' }}>
                         <div className="carousel-item active">
                             <img
-                                src="/Images/Dining3.jpg"
+                                src={`${BASE_URL}/Images/Dining3.jpg`}
                                 className="d-block w-100"
                                 alt="..."
                                 style={{ height: '100%', objectFit: 'cover' }}
@@ -21,7 +22,7 @@ export default function SmallCarousel(props) {
                         </div>
                         <div className="carousel-item">
                             <img
-                                src="/Images/Dining2.jpg"
+                                src={`${BASE_URL}/Images/Dining2.jpg`}
                                 className="d-block w-100"
                                 alt="..."
                                 style={{ height: '100%', objectFit: 'cover' }}
@@ -29,7 +30,7 @@ export default function SmallCarousel(props) {
                         </div>
                         <div className="carousel-item">
                             <img
-                                src="/Images/Dining 4.jpg"
+                                src={`${BASE_URL}/Images/Dining 4.jpg`}
                                 className="d-block w-100"
                                 alt="..."
                                 style={{ height: '100%', objectFit: 'cover' }}
@@ -66,7 +67,7 @@ export default function SmallCarousel(props) {
                     <div className="carousel-inner" style={{ height: '100%' }}>
                         <div className="carousel-item active">
                             <img
-                                src="/Images/D7.jpg"
+                                src={`${BASE_URL}/Images/D7.jpg`}
                                 className="d-block w-100"
                                 alt="..."
                                 style={{ height: '100%', objectFit: 'cover' }}
@@ -75,7 +76,7 @@ export default function SmallCarousel(props) {
                         </div>
                         <div className="carousel-item">
                             <img
-                                src="/Images/D5.jpg"
+                                src={`${BASE_URL}/Images/D5.jpg`}
                                 className="d-block w-100"
                                 alt="..."
                                 style={{ height: '100%', objectFit: 'cover' }}
@@ -83,7 +84,7 @@ export default function SmallCarousel(props) {
                         </div>
                         <div className="carousel-item">
                             <img
-                                src="/Images/D8.jpg"
+                                src={`${BASE_URL}/Images/D8.jpg`}
                                 className="d-block w-100"
                                 alt="..."
                                 style={{ height: '100%', objectFit: 'cover' }}
@@ -120,7 +121,7 @@ export default function SmallCarousel(props) {
                     <div className="carousel-inner" style={{ height: '100%' }}>
                         <div className="carousel-item active">
                             <img
-                                src="/Images/D9.jpg"
+                                src={`${BASE_URL}/Images/D9.jpg`}
                                 className="d-block w-100"
                                 alt="..."
                                 style={{ height: '100%', objectFit: 'cover' }}
@@ -128,7 +129,7 @@ export default function SmallCarousel(props) {
                         </div>
                         <div className="carousel-item">
                             <img
-                                src="/Images/D10.jpg"
+                                src={`${BASE_URL}/Images/D10.jpg`}
                                 className="d-block w-100"
                                 alt="..."
                                 style={{ height: '100%', objectFit: 'cover' }}
@@ -136,7 +137,7 @@ export default function SmallCarousel(props) {
                         </div>
                         <div className="carousel-item">
                             <img
-                                src="/Images/D6.jpg"
+                                src={`${BASE_URL}/Images/D6.jpg`}
                                 className="d-block w-100"
                                 alt="..."
                                 style={{ height: '100%', objectFit: 'cover' }}
