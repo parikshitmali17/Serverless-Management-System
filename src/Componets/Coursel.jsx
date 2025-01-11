@@ -39,7 +39,7 @@ export default function Coursel() {
                     </div>
                 </div>
                 <div className="carousel-item">
-                    <img src="Images\Corporate Meeting.jpg" className="d-block w-100" alt="..." />
+                    <img src="Images\CorporateMeeting.jpg" className="d-block w-100" alt="..." />
                     <div className="carousel-caption d-none d-md-block">
                         <h5 style={{color:"black"}} >We offer different types  of corporate events</h5>
                         <p style={{color:"black"}}>Board Meetings,Product Launches,Corporate Dinner,etc</p>
