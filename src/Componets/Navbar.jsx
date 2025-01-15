@@ -1,4 +1,20 @@
+import { Auth } from "aws-amplify";
+import React from "react";
 export default function Navbar(){
+
+  const handleLogout = () => {
+    Auth.signOut()
+      .then(() => {
+        console.log("User signed out");
+        // Optionally redirect to login page or home
+        window.location.href = "/";
+      })
+      .catch(err => {
+        console.error("Error signing out:", err);
+      });
+    }
+
+
     return <nav style={{ backgroundColor: "#0B090E" }} className="navbar navbar-expand-lg  " >
     <div className="container-fluid" style={{ color:"#D678A4" }}>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,7 +43,7 @@ export default function Navbar(){
           </li>
         </ul>
         <div className="d-lg-flex col-lg-3 justify-content-lg-end">
-          <button style={{ color:"#D678A4" }} className="btn btn-primary">Button</button>
+          <button onClick={handleLogout} style={{ color:"#D678A4" }} className="btn btn-primary">Sign Out</button>
         </div>
       </div>
     </div>
