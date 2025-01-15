@@ -1,18 +1,20 @@
-import { Auth } from "aws-amplify";
-import React from "react";
+// import { Auth } from '@aws-amplify/auth';
+// import { signOut } from '@aws-amplify/auth';
+
+
 export default function Navbar(){
 
-  const handleLogout = () => {
-    Auth.signOut()
-      .then(() => {
-        console.log("User signed out");
-        // Optionally redirect to login page or home
-        window.location.href = "/";
-      })
-      .catch(err => {
-        console.error("Error signing out:", err);
-      });
-    }
+  // const handleLogout = () => {
+  //   Auth.signOut()
+  //     .then(() => {
+  //       console.log("User signed out");
+  //       // Optionally redirect to login page or home
+  //       window.location.href = "/";
+  //     })
+  //     .catch(err => {
+  //       console.error("Error signing out:", err);
+  //     });
+  //   }
 
 
     return <nav style={{ backgroundColor: "#0B090E" }} className="navbar navbar-expand-lg  " >
@@ -43,7 +45,7 @@ export default function Navbar(){
           </li>
         </ul>
         <div className="d-lg-flex col-lg-3 justify-content-lg-end">
-          <button onClick={handleLogout} style={{ color:"#D678A4" }} className="btn btn-primary">Sign Out</button>
+          <button  style={{ color:"#D678A4" }} className="btn btn-primary">Sign Out</button>
         </div>
       </div>
     </div>
